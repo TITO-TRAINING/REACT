@@ -7,15 +7,11 @@ Use the package manager [pnpm](https://pnpm.io/) to install.
 
 Installation:
 
-`npm install`  
-
-To Run Test Suite:  
-
-`npm test`  
+`pnpm install`  
 
 To Start Server:
 
-`npm start`  
+`pnpm dev`  
 
 To Visit App:
 
