@@ -1,0 +1,111 @@
+@use '../abstracts/' as *;
+
+.about-page {
+    &-title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-family: $Playfair-Display-font;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 80px;
+            text-align: left;
+            vertical-align: Top;
+            letter-spacing: 5%;
+            word-spacing: 18px;
+            width: 702px;
+            height: 173px;
+        }
+        @include tablet {
+            h2 {
+                letter-spacing: 2%;
+                line-height: 2;
+                width: auto;
+                font-size: 30px;
+            }
+        }
+        p {
+            font-family: $primary-font;
+            font-style: $Playfair-Display-font;
+            font-size: 22px;
+            line-height: 46px;
+            text-align: left;
+            vertical-align: top;
+            letter-spacing: 5%;
+            left: 118px;
+            top: 546px;
+            width: 419px;
+            height: 214px;
+            color: $text-color-content;
+        }
+        @include tablet {
+            p {
+                letter-spacing: 2%;
+                font-size: 17px;
+                width: auto;
+                margin-bottom: 60px;
+            }
+        }
+    }
+    &-button {
+        &__restaurant {
+            button {
+                padding: 10px 15px;
+                font-size: 18px;
+                font-family: $primary-font;
+                border: none;
+                outline: none;
+                border-radius: 35px;
+                cursor: pointer;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 6px $box-search-color;
+                a {
+                    color: $text-color;
+                    margin-right: 5px;
+                    text-decoration: none;
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+        &__aboutus {
+            button {
+                padding: 10px 15px;
+                font-size: 18px;
+                font-family: $primary-font;
+                border: none;
+                outline: none;
+                border-radius: 35px;
+                cursor: pointer;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 6px $box-search-color;
+                a {
+                    color: $text-color;
+                    margin-right: 5px;
+                    text-decoration: none;
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+    &-img {
+        &__food {
+            border-radius: 50%;
+        }
+        &__food2 {
+            .dool {
+                margin-top: -50%;
+            }
+        }
+        @include tablet {
+            .dool {
+                display: none;
+            }
+        }
+    }
+}
