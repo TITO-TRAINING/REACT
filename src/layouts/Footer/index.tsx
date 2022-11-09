@@ -61,6 +61,12 @@ function Footer() {
             </div>
           </div>
         </div>
+        <div className="text-center p-4 border border-secondary">
+          Copyright &copy 2022:
+          <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
+            Mai Lan
+          </a>
+        </div>
       </footer>
     </section>
   );
