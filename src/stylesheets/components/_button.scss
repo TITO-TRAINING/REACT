@@ -1,4 +1,4 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
 
 .btn {
   &-ChangePhoto {
@@ -6,8 +6,8 @@
     cursor: pointer;
     padding: 16px;
     color: var(--color);
-    border-radius: var(--border-radius);
-    background-color: var(--backgroundColor);
+    border-radius: 20px;
+    background-color: $background-color-btn;
     &:hover {
       color: $icon-color;
     }
