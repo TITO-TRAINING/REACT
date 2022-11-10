@@ -3,7 +3,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import ImgUpdate from '../../assets/images/update.png';
 import Pinnedreviewcard from '../../components/PinnedReviewCard';
-import Recentpost from '../../components/Recentpost';
 import Recentpostcard from '../../components/RecentPostCard';
 import Slide from '../../components/Slide';
 import Tittlesearch from '../../components/Titlesearch';
@@ -13,6 +12,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Footer from '../../layouts/Footer';
 import dataMock from '../../dataMock';
 import Title from '../../assets/images/pushPin.png';
+import RecentPost from '../../components/RecentPost';
 
 function Homepage() {
   const settings = {
@@ -44,7 +44,7 @@ function Homepage() {
       <main className="container pt-5 ">
         <Tittlesearch />
         <Slide />
-        <Recentpost text="Recent post" imageCard={ImgUpdate} />
+        <RecentPost text="Recent post" imageCard={ImgUpdate} />
         <section className="recent">
           <div className="recent-post-card">
             <Slider {...settings}>
@@ -55,7 +55,7 @@ function Homepage() {
           </div>
         </section>
         <section className="section-card mb-5">
-          <Recentpost text="Pinned Review" imageCard={Title} />
+          <RecentPost text="Pinned Review" imageCard={Title} />
           <div className="pinned-review mt-5">
             <Slider {...settings}>
               {dataMock.dataPinnedReview.map((item) => (
