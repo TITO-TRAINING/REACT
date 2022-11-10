@@ -1,5 +1,5 @@
 import React from 'react';
-import Footerlinkimg from '../../components/FooterLinkImg';
+import FooterLinkImg from '../../components/FooterLinkImg';
 import Logo from '../../assets/images/logo.png';
 import dataMock from '../../dataMock';
 import LisCard from '../../components/ListCard';
@@ -21,7 +21,7 @@ function Footer() {
               </p>
               <div className="footer-link d-flex justify-content-between">
                 {dataMock.dataLinkImgFooter.map((LogoFooter) => (
-                  <Footerlinkimg
+                  <FooterLinkImg
                     link={LogoFooter.link}
                     linkImg={LogoFooter.linkImg}
                     logo={LogoFooter.logo}

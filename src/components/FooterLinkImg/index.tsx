@@ -5,7 +5,7 @@ interface Props {
   linkImg: string;
   logo: string;
 }
-function Footerlinkimg({ link, linkImg, logo }: Props) {
+function FooterLinkImg({ link, linkImg, logo }: Props) {
   return (
     <a href={link}>
       <img className="footer-link__img" src={linkImg} alt={logo} />
@@ -13,4 +13,4 @@ function Footerlinkimg({ link, linkImg, logo }: Props) {
   );
 }
 
-export default Footerlinkimg;
+export default FooterLinkImg;
