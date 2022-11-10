@@ -29,6 +29,7 @@ const dataSliders = [
     img: Slide3,
   },
 ];
+
 const dataRecentPosts = [
   {
     img: Recentpost1,
@@ -61,6 +62,30 @@ const dataPinnedReview = [
     info: 'Mailan',
     comment:
       'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
+  },
+];
+
+const dataRecentBlogCard = [
+  {
+    imageBlogCard: Recentpost1,
+    cardTitle: 'Pinned Review',
+    cardText:
+      'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
+    cardTime: 'Update last ',
+  },
+  {
+    imageBlogCard: Recentpost2,
+    cardTitle: 'Pinned Review',
+    cardText:
+      'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
+    cardTime: 'Update last ',
+  },
+  {
+    imageBlogCard: Recentpost1,
+    cardTitle: 'Pinned Review',
+    cardText:
+      'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
+    cardTime: 'Update last ',
   },
 ];
 
@@ -158,6 +183,7 @@ export default {
   dataSliders,
   dataRecentPosts,
   dataPinnedReview,
+  dataRecentBlogCard,
   dataLinkImgFooter,
   dataListCompany,
   dataListProducts,
