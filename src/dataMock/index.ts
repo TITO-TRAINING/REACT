@@ -11,6 +11,13 @@ import imgPinnedReview from '../assets/images/Ellipse2171(1).png';
 import imgPinnedReview2 from '../assets/images/Ellipse217(2).png';
 import imgPinnedReview3 from '../assets/images/Ellipse217(3).png';
 
+// data footer img link
+import logoFb from '../assets/images/facebookLogo.png';
+import logoInstagram from '../assets/images/instagramLogo.png';
+import logoTwitter from '../assets/images/twitterLogo.png';
+
+// data main link footer
+
 const dataSliders = [
   {
     img: Slide1,
@@ -22,6 +29,7 @@ const dataSliders = [
     img: Slide3,
   },
 ];
+
 const dataRecentPosts = [
   {
     img: Recentpost1,
@@ -81,9 +89,103 @@ const dataRecentBlogCard = [
   },
 ];
 
+const dataLinkImgFooter = [
+  {
+    link: '/',
+    linkImg: logoFb,
+    logo: 'logo facebook',
+  },
+  {
+    link: '/',
+    linkImg: logoInstagram,
+    logo: 'logo instagram',
+  },
+  {
+    link: '/',
+    linkImg: logoTwitter,
+    logo: 'logo twitter',
+  },
+];
+
+const dataListCompany = [
+  {
+    classTitle: '',
+    item: 'News',
+    title: 'Company',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: 'Blog',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: 'Testimonials',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: 'About Us',
+    linkMainFooter: '/',
+  },
+];
+
+const dataListProducts = [
+  {
+    classTitle: '',
+    item: 'UI Kits',
+    title: 'Products',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: 'Icons',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: 'Wordpress Themes',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: 'Mock-Ups',
+    linkMainFooter: '/',
+  },
+];
+
+const dataListContact = [
+  {
+    classTitle: '',
+    item: 'New York, NY 10012',
+    title: 'Contact',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: 'info@example.com',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: '+ 01 234 567 88',
+    linkMainFooter: '/',
+  },
+  {
+    classTitle: '',
+    item: '+ 01 234 567 89',
+    linkMainFooter: '/',
+  },
+];
+
 export default {
   dataSliders,
   dataRecentPosts,
   dataPinnedReview,
   dataRecentBlogCard,
+  dataLinkImgFooter,
+  dataListCompany,
+  dataListProducts,
+  dataListContact,
 };

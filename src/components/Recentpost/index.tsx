@@ -4,7 +4,7 @@ interface Props {
   text: string;
   imageCard: string;
 }
-function Recentpost({ text, imageCard }: Props) {
+function RecentPost({ text, imageCard }: Props) {
   return (
     <div className="recent d-flex align-items-center gap-2 mt-4">
       <p className="recent-post">{text}</p>
@@ -15,4 +15,4 @@ function Recentpost({ text, imageCard }: Props) {
   );
 }
 
-export default Recentpost;
+export default RecentPost;
