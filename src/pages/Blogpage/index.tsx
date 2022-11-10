@@ -6,7 +6,7 @@ import Header from '../../layouts/Header';
 import dataMock from '../../dataMock';
 import ReccentBlogCard from '../../components/ReccentBlogCard';
 
-function Blogpage() {
+function BlogPage() {
   const classLine = 'line-blog line';
   return (
     <div>
@@ -32,4 +32,4 @@ function Blogpage() {
   );
 }
 
-export default Blogpage;
+export default BlogPage;
