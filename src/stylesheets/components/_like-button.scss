@@ -1,14 +1,22 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
 
-.like__button {
-    padding: 10px 15px;
-    background: $bg-button-color;
-    font-size: 18px;
-    font-family: $primary-font;
-    border: none;
-    outline: none;
-    color:$text-color;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
+.like-button {
+  padding: 10px 15px;
+  background: $bg-img-color;
+  font-size: 20px;
+  font-family: $primary-font;
+  border: none;
+  outline: none;
+  color: $text-color;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.liked {
+  font-weight: bold;
+  color: #1565c0;
+}
+.ai-twotone-like {
+  padding-bottom: 3px;
 }
