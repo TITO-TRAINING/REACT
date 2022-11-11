@@ -1,3 +1,4 @@
+// data slider
 import Slide1 from '../assets/images/banner1.png';
 import Slide2 from '../assets/images/banner2.png';
 import Slide3 from '../assets/images/banner3.png';
@@ -16,7 +17,6 @@ import logoFb from '../assets/images/facebookLogo.png';
 import logoInstagram from '../assets/images/instagramLogo.png';
 import logoTwitter from '../assets/images/twitterLogo.png';
 
-// data main link footer
 // data Comment
 import imgAvt from '../assets/images/avt.png';
 
@@ -46,6 +46,7 @@ const dataRecentPosts = [
     img: Recentpost2,
   },
 ];
+
 const dataPinnedReview = [
   {
     cardReviewersImage: imgPinnedReview,
@@ -205,6 +206,21 @@ const dataComments = [
   },
 ];
 
+const dataTagSocial = [
+  {
+    linkTagSocial: '/',
+    tagSocial: 'breakfast',
+  },
+  {
+    linkTagSocial: '/',
+    tagSocial: 'dinner',
+  },
+  {
+    linkTagSocial: '/',
+    tagSocial: 'lunch',
+  },
+];
+
 export default {
   dataSliders,
   dataRecentPosts,
@@ -215,4 +231,5 @@ export default {
   dataListProducts,
   dataListContact,
   dataComments,
+  dataTagSocial,
 };

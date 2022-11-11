@@ -13,7 +13,7 @@ function DetailComment({ imgAvtComment, info, day, comment }: Props) {
         <img
           className="thumb__fit-image img-fluid rounded-circle mr-3 mb-3"
           src={imgAvtComment}
-          alt=""
+          alt="imgAvtComment"
         />
       </figure>
       <div className="blog-details-comment content row">

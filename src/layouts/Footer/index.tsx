@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiCopyright } from 'react-icons/bi';
 import FooterLinkImg from '../../components/FooterLinkImg';
 import Logo from '../../assets/images/logo.png';
 import dataMock from '../../dataMock';
@@ -62,7 +63,7 @@ function Footer() {
           </div>
         </div>
         <div className="text-center p-4 border border-secondary">
-          Copyright &copy 2022:
+          Copyright <BiCopyright /> 2022:
           <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
             Mai Lan
           </a>

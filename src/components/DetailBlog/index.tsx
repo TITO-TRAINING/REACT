@@ -1,11 +1,14 @@
 import React from 'react';
+import dataMock from '../../dataMock';
+import LikeButton from '../LikeButton';
+import TagSocial from '../TagSocial';
 
 interface Props {
   imgDetailBlog: string;
   tittleDetailBlog: string;
   info: string;
   day: string;
-  numberComment: string;
+  numberComment: number;
   content: string;
   blockquote: string;
   content2: string;
@@ -28,7 +31,7 @@ function Detailblog({
         <div className="blog-details-content__image">
           <img
             src={imgDetailBlog}
-            alt=""
+            alt="imgDetailBlog"
             className="blog-details-content__image-fitimg"
           />
         </div>
@@ -41,7 +44,7 @@ function Detailblog({
             <li>
               By: <a href={linkInfo}>{info}</a> <p>{day}</p>
             </li>
-            <li>{numberComment}</li>
+            <li>{numberComment} comment </li>
           </ul>
         </div>
 
@@ -54,18 +57,15 @@ function Detailblog({
         <div className="blog-details-content__tagsocial mb-n4">
           <div className="blog-details-content__tagsocial-tag mb-4">
             <ul>
-              <li>
-                <a href="/">breakfast</a>
-              </li>
-              <li>
-                <a href="/">dinner</a>
-              </li>
-              <li>
-                <a href="/">lunch</a>
-              </li>
+              {dataMock.dataTagSocial.map((listTagSocial) => (
+                <TagSocial
+                  linkTagSocial={listTagSocial.linkTagSocial}
+                  tagSocial={listTagSocial.tagSocial}
+                />
+              ))}
             </ul>
           </div>
-          {/* <include src="components/like-button.html"></include> */}
+          <LikeButton />
         </div>
       </div>
     </div>

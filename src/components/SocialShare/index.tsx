@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  FaInstagramSquare,
+  FaFacebook,
+  FaTwitterSquare,
+  FaSkype,
+  FaDribbbleSquare,
+} from 'react-icons/fa';
 
 function SocialShare() {
   return (
@@ -6,19 +13,19 @@ function SocialShare() {
       <div className="widget-social">
         <p>Share: </p>
         <a title="Twitter" href="/">
-          <i className="fa-brands fa-twitter" />
+          <FaTwitterSquare className="FaTwitterSquare" />
         </a>
         <a title="Instagram" href="/">
-          <i className="fa-brands fa-instagram" />
+          <FaInstagramSquare className="FaInstagram" />
         </a>
         <a title="Linkedin" href="/">
-          <i className="fa-brands fa-linkedin-in" />
+          <FaFacebook className="FaFacebook" />
         </a>
         <a title="Skype" href="/">
-          <i className="fa-brands fa-skype" />
+          <FaSkype className="FaSkype" />
         </a>
         <a title="Dribble" href="/">
-          <i className="fa-brands fa-dribbble" />
+          <FaDribbbleSquare className="FaDribbbleSquare" />
         </a>
       </div>
     </div>
