@@ -28,7 +28,7 @@ function Header() {
               <Link to="/Detailblogpage">Newsfeed</Link>
             </li>
             <li className="nav-item">
-              <Link to="/about">Logout</Link>
+              <Link to="/Contact">Contact</Link>
             </li>
             <li className="nav-item">
               <Link to="/about">Logout</Link>

@@ -16,7 +16,8 @@ import logoFb from '../assets/images/facebookLogo.png';
 import logoInstagram from '../assets/images/instagramLogo.png';
 import logoTwitter from '../assets/images/twitterLogo.png';
 
-// data main link footer
+// data Comment
+import imgAvt from '../assets/images/avt.png';
 
 const dataSliders = [
   {
@@ -179,6 +180,60 @@ const dataListContact = [
   },
 ];
 
+const dataComments = [
+  {
+    imgAvtComment: imgAvt,
+    info: 'Mai Lan',
+    day: '07 10 2022',
+    comment:
+      'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
+  },
+  {
+    imgAvtComment: imgAvt,
+    info: 'Mai Lan',
+    day: '07 10 2022',
+    comment:
+      'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
+  },
+  {
+    imgAvtComment: imgAvt,
+    info: 'Mai Lan',
+    day: '07 10 2022',
+    comment:
+      'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
+  },
+];
+
+const dataTagSocial = [
+  {
+    linkTagSocial: '/',
+    tagSocial: 'breakfast',
+  },
+  {
+    linkTagSocial: '/',
+    tagSocial: 'dinner',
+  },
+  {
+    linkTagSocial: '/',
+    tagSocial: 'lunch',
+  },
+];
+
+const datFormInput = [
+  {
+    classForm: 'form-input col-md-6',
+    type: 'text',
+    classInput: 'input',
+    placeholder: 'Your Name',
+  },
+  {
+    classForm: 'form-input col-md-6',
+    type: 'email',
+    classInput: 'input',
+    placeholder: 'Your Mail',
+  },
+];
+
 export default {
   dataSliders,
   dataRecentPosts,
@@ -188,4 +243,7 @@ export default {
   dataListCompany,
   dataListProducts,
   dataListContact,
+  dataComments,
+  dataTagSocial,
+  datFormInput,
 };
