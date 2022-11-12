@@ -1,15 +1,20 @@
 import React from 'react';
 import ImgContact from '../../assets/images/food.jpg';
-import Button from '../../components/Button';
 import FormInput from '../../components/FormInput';
 import Line from '../../components/Line';
 import Tittlesearch from '../../components/Titlesearch';
 import dataMock from '../../dataMock';
 import Footer from '../../layouts/Footer';
 import Header from '../../layouts/Header';
+import Common from '../../Constants/Common';
+import SubmitForm from '../../components/SubmitForm';
 
 export default function Contact() {
   const classLine = 'line-contact line';
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    // console.log('You have submitted the form.');
+  };
   return (
     <div>
       <Header />
@@ -27,13 +32,11 @@ export default function Contact() {
                   <h2>CONTACT US ABOUT</h2>
                 </div>
                 <div className="contact-area-form">
-                  <form action="/">
+                  <form action="/" onSubmit={handleSubmit}>
                     <div className="row">
                       {dataMock.datFormInput.map((listFormInput) => (
                         <FormInput
-                          classForm={listFormInput.classForm}
                           type={listFormInput.type}
-                          classInput={listFormInput.classInput}
                           placeholder={listFormInput.placeholder}
                         />
                       ))}
@@ -46,18 +49,18 @@ export default function Contact() {
                       id="message"
                       placeholder="Write Message..."
                     />
-                    <Button button="SUBMIT MESSAGE" classButton="btn" />
+                    <SubmitForm nameButton="SUBMIT MESSAGE" classButton="btn" />
                   </form>
                 </div>
                 <div className="contact-area-info__list mb-3 mt-4">
                   <ul>
                     <li>
                       <i className="fas fa-map-marker-alt" />
-                      470 Trần Đại Nghĩa-Ngũ Hành Sơn-Đà Nẵng
+                      {Common.ADDRESS}
                     </li>
                     <li>
                       <i className="fas fa-envelope" />
-                      mailencutephomaique@gmail.com
+                      {Common.YOUR_EMAIL}
                     </li>
                   </ul>
                 </div>

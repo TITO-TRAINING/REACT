@@ -22,13 +22,13 @@ function Header() {
               <Link to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/Blogpage">Restaurants</Link>
+              <Link to="/blog">Restaurants</Link>
             </li>
             <li className="nav-item">
-              <Link to="/Detailblogpage">Newsfeed</Link>
+              <Link to="/cetail-blog">Newsfeed</Link>
             </li>
             <li className="nav-item">
-              <Link to="/Contact">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
             <li className="nav-item">
               <Link to="/about">Logout</Link>

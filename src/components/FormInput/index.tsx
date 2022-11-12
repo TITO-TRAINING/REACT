@@ -1,9 +1,9 @@
 import React from 'react';
 
 interface Props {
-  classForm: string;
-  type: string;
-  classInput: string;
+  classForm?: string;
+  type?: string;
+  classInput?: string;
   placeholder: string;
 }
 export default function FormInput({
@@ -18,3 +18,9 @@ export default function FormInput({
     </div>
   );
 }
+
+FormInput.defaultProps = {
+  classForm: 'form-input col-md-6',
+  type: 'text',
+  classInput: 'input',
+};

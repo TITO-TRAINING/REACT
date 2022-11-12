@@ -221,15 +221,10 @@ const dataTagSocial = [
 
 const datFormInput = [
   {
-    classForm: 'form-input col-md-6',
-    type: 'text',
-    classInput: 'input',
     placeholder: 'Your Name',
   },
   {
-    classForm: 'form-input col-md-6',
     type: 'email',
-    classInput: 'input',
     placeholder: 'Your Mail',
   },
 ];
