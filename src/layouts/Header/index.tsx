@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="headerr">
       <header className="header navbar navbar-expand-lg row justify-content-between container-fluid">
-        <div className="header-logo navbar-brand d-flex align-items-center gap-4 col-md-5 col-lg-4">
+        <div className="header-logo navbar-brand d-flex align-items-center gap-4 col-md-4">
           <figure className="header-logo-image">
             <img src={Logo} alt="logo food review blog" />
           </figure>
@@ -16,7 +16,7 @@ function Header() {
             <FaBars />
           </div>
         </div>
-        <nav className="header-nav col-md-7">
+        <nav className="header-nav col-md-8">
           <ul className="header-nav-list navbar-nav d-flex justify-content-between">
             <li className="nav-item">
               <Link to="/">Home</Link>
@@ -29,6 +29,9 @@ function Header() {
             </li>
             <li className="nav-item">
               <Link to="/contact">Contact</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about">About</Link>
             </li>
             <li className="nav-item">
               <Link to="/about">Logout</Link>
