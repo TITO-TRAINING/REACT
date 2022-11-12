@@ -184,21 +184,21 @@ const dataComments = [
   {
     imgAvtComment: imgAvt,
     info: 'Mai Lan',
-    day: '07 10 2022',
+    date: '07 10 2022',
     comment:
       'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
   },
   {
     imgAvtComment: imgAvt,
     info: 'Mai Lan',
-    day: '07 10 2022',
+    date: '07 10 2022',
     comment:
       'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
   },
   {
     imgAvtComment: imgAvt,
     info: 'Mai Lan',
-    day: '07 10 2022',
+    date: '07 10 2022',
     comment:
       'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
   },
@@ -219,7 +219,7 @@ const dataTagSocial = [
   },
 ];
 
-const datFormInput = [
+const dataFormInput = [
   {
     placeholder: 'Your Name',
   },
@@ -240,5 +240,5 @@ export default {
   dataListContact,
   dataComments,
   dataTagSocial,
-  datFormInput,
+  dataFormInput,
 };

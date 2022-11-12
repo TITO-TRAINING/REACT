@@ -34,7 +34,7 @@ export default function Contact() {
                 <div className="contact-area-form">
                   <form action="/" onSubmit={handleSubmit}>
                     <div className="row">
-                      {dataMock.datFormInput.map((listFormInput) => (
+                      {dataMock.dataFormInput.map((listFormInput) => (
                         <FormInput
                           type={listFormInput.type}
                           placeholder={listFormInput.placeholder}
