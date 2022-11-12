@@ -1,13 +1,23 @@
 import React from 'react';
+
+// img
 import ImgContact from '../../assets/images/food.jpg';
+
+// component
 import FormInput from '../../components/FormInput';
 import Line from '../../components/Line';
 import Tittlesearch from '../../components/Titlesearch';
+import SubmitForm from '../../components/SubmitForm';
+
+// data mock
 import dataMock from '../../dataMock';
+
+// layout
 import Footer from '../../layouts/Footer';
 import Header from '../../layouts/Header';
+
+// constants
 import Common from '../../Constants/Common';
-import SubmitForm from '../../components/SubmitForm';
 
 export default function Contact() {
   const classLine = 'line-contact line';
