@@ -1,23 +1,19 @@
 import React from 'react';
 
 interface Props {
-  classImgAbout?: string;
-  imgAboutFood: string;
-  altAboutImgFood: string;
+  classImg?: string;
+  img: string;
+  altImg: string;
 }
-export default function AboutImgPage({
-  classImgAbout,
-  imgAboutFood,
-  altAboutImgFood,
-}: Props) {
+export default function AboutImgPage({ classImg, img, altImg }: Props) {
   return (
-    <div className={classImgAbout}>
+    <div className={classImg}>
       <figure className="col-md-4 dool">
-        <img src={imgAboutFood} alt={altAboutImgFood} />
+        <img src={img} alt={altImg} />
       </figure>
     </div>
   );
 }
 AboutImgPage.defaultProps = {
-  classImgAbout: 'about-page-img__food2',
+  classImg: 'about-page-img__food2',
 };

@@ -46,9 +46,9 @@ export default function ContentAbout() {
         </figure>
         {dataMock.dataImgAbout.map((listImgAbout) => (
           <AboutImgPage
-            imgAboutFood={listImgAbout.img}
-            altAboutImgFood={listImgAbout.alt}
-            classImgAbout={listImgAbout.class}
+            img={listImgAbout.img}
+            altImg={listImgAbout.alt}
+            classImg={listImgAbout.class}
           />
         ))}
       </div>
