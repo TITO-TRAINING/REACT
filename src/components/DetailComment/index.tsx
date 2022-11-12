@@ -1,18 +1,18 @@
 import React from 'react';
 
 interface Props {
-  imgAvtComment: string;
+  img: string;
   info: string;
   day: string;
   comment: string;
 }
-function DetailComment({ imgAvtComment, info, day, comment }: Props) {
+function DetailComment({ img, info, day, comment }: Props) {
   return (
     <div className="blog-details-comment mt-5">
       <figure className="blog-details-comment thumb">
         <img
           className="thumb__fit-image img-fluid rounded-circle mr-3 mb-3"
-          src={imgAvtComment}
+          src={img}
           alt="imgAvtComment"
         />
       </figure>

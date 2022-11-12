@@ -1,28 +1,30 @@
 import React from 'react';
+// data mock
 import dataMock from '../../dataMock';
+// component
 import LikeButton from '../LikeButton';
 import TagSocial from '../TagSocial';
 
 interface Props {
-  imgDetailBlog: string;
-  tittleDetailBlog: string;
+  img: string;
+  title: string;
   info: string;
   day: string;
   numberComment: number;
-  content: string;
+  firtContent: string;
   blockquote: string;
-  content2: string;
+  SecondContent: string;
   linkInfo: string;
 }
 function Detailblog({
-  imgDetailBlog,
-  tittleDetailBlog,
+  img,
+  title,
   info,
   day,
   numberComment,
-  content,
+  firtContent,
   blockquote,
-  content2,
+  SecondContent,
   linkInfo,
 }: Props) {
   return (
@@ -30,16 +32,14 @@ function Detailblog({
       <div className="blog-details-content">
         <div className="blog-details-content__image">
           <img
-            src={imgDetailBlog}
+            src={img}
             alt="imgDetailBlog"
             className="blog-details-content__image-fitimg"
           />
         </div>
 
         <div className="blog-details-content__titlemeta">
-          <h2 className="blog-details-content__titlemeta-title">
-            {tittleDetailBlog}
-          </h2>
+          <h2 className="blog-details-content__titlemeta-title">{title}</h2>
           <ul className="blog-details-content__titlemeta-meta">
             <li>
               By: <a href={linkInfo}>{info}</a> <p>{day}</p>
@@ -48,11 +48,11 @@ function Detailblog({
           </ul>
         </div>
 
-        <p>{content}</p>
+        <p>{firtContent}</p>
 
         <blockquote> {blockquote}</blockquote>
 
-        <p>{content2}</p>
+        <p>{SecondContent}</p>
 
         <div className="blog-details-content__tagsocial mb-n4">
           <div className="blog-details-content__tagsocial-tag mb-4">

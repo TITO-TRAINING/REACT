@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // pages
 import Homepage from './pages/Homepage';
-import BlogPage from './pages/Blogpage';
 import DetailBlogPage from './pages/Detailblogpage';
+import BlogPage from './pages/BlogPage';
 
 function App() {
   return (

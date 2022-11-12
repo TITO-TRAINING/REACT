@@ -1,25 +1,22 @@
 import React, { useState } from 'react';
+// icon
 import { AiTwotoneLike } from 'react-icons/ai';
 
-function LikeButtonCompoent() {
-  const [like, setLike] = useState(0);
-  const [isLike, setIsLike] = useState(false);
+export default function LikeButtonComponent() {
+  const [like, setLike] = useState<number>(0);
+  const [isLike, setIsLike] = useState<boolean>(false);
   const onLikeButtonClick = () => {
     setLike(like + (isLike ? -1 : 1));
-    setIsLike(!isLike);
+    setIsLike((islike) => !islike);
   };
-
+  const likeButtonClassName = `like-button ${isLike ? 'liked' : ''}`;
   return (
     <button
       type="button"
-      className={`like-button ${isLike ? 'liked' : ''}`}
+      className={likeButtonClassName}
       onClick={onLikeButtonClick}
     >
       Like <AiTwotoneLike className="ai-twotone-like" /> {like}
     </button>
   );
-}
-
-export default function App() {
-  return <LikeButtonCompoent />;
 }
