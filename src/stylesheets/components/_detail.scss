@@ -1,4 +1,4 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
 
 .blog-details {
   &-content {
@@ -19,7 +19,6 @@
         margin-right: 20px;
         position: relative;
         &::before {
-          content: "";
           position: absolute;
           top: 50%;
           transform: translateX(-50%);

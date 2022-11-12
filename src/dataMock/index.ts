@@ -1,3 +1,5 @@
+// data slider
+import { FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa';
 import Slide1 from '../assets/images/banner1.png';
 import Slide2 from '../assets/images/banner2.png';
 import Slide3 from '../assets/images/banner3.png';
@@ -18,6 +20,8 @@ import logoTwitter from '../assets/images/twitterLogo.png';
 
 // data Comment
 import imgAvt from '../assets/images/avt.png';
+
+// data social share
 
 const dataSliders = [
   {
@@ -45,6 +49,7 @@ const dataRecentPosts = [
     img: Recentpost2,
   },
 ];
+
 const dataPinnedReview = [
   {
     cardReviewersImage: imgPinnedReview,
@@ -228,6 +233,24 @@ const dataFormInput = [
     placeholder: 'Your Mail',
   },
 ];
+const dataSocialShare = [
+  {
+    title: '',
+    href: '',
+    icon: FaTwitterSquare,
+    className: '',
+  },
+  {
+    title: '',
+    href: '',
+    icon: FaInstagramSquare,
+  },
+  {
+    title: '',
+    href: '',
+    icon: FaTwitterSquare,
+  },
+];
 
 export default {
   dataSliders,
@@ -241,4 +264,5 @@ export default {
   dataComments,
   dataTagSocial,
   dataFormInput,
+  dataSocialShare,
 };

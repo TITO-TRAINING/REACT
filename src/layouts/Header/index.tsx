@@ -25,7 +25,7 @@ function Header() {
               <Link to="/blog">Restaurants</Link>
             </li>
             <li className="nav-item">
-              <Link to="/cetail-blog">Newsfeed</Link>
+              <Link to="/detail-blog">Newsfeed</Link>
             </li>
             <li className="nav-item">
               <Link to="/contact">Contact</Link>
