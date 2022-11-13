@@ -3,6 +3,7 @@ import React from 'react';
 import { BiRestaurant } from 'react-icons/bi';
 import { FcAbout } from 'react-icons/fc';
 // data mock
+import { Link } from 'react-router-dom';
 import dataMock from '../../dataMock';
 // img
 import AboutImgPage from '../AboutImgPage';
@@ -21,16 +22,16 @@ export default function ContentAbout() {
         <div className="row">
           <div className="about-page-button__restaurant d-flex justify-content-center col-md-6 ">
             <button type="button">
-              <a href="/blog">
+              <Link to="/blog">
                 <BiRestaurant /> Restaurants
-              </a>
+              </Link>
             </button>
           </div>
           <div className="about-page-button__aboutus d-flex justify-content-center">
             <button type="button">
-              <a href="/">
+              <Link to="/">
                 <FcAbout /> about us
-              </a>
+              </Link>
             </button>
           </div>
         </div>
