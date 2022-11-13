@@ -4,7 +4,7 @@ interface Props {
   item: string;
   link: string;
 }
-export default function LisCard({ item, link }: Props) {
+export default function ListCard({ item, link }: Props) {
   return (
     <ul>
       <li>
@@ -15,4 +15,3 @@ export default function LisCard({ item, link }: Props) {
     </ul>
   );
 }
-LisCard.defaultProps = {};

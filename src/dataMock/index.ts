@@ -296,6 +296,33 @@ const dataCardDevelopers = [
   },
 ];
 
+const dataLinhNav = [
+  {
+    link: '/',
+    page: 'Home',
+  },
+  {
+    link: '/blog',
+    page: 'Restaurants',
+  },
+  {
+    link: '/detail-blog',
+    page: 'Newsfeed',
+  },
+  {
+    link: '/contact',
+    page: 'Contact',
+  },
+  {
+    link: '/about',
+    page: 'About',
+  },
+  {
+    link: '/logout',
+    page: 'Logout',
+  },
+];
+
 export default {
   dataSliders,
   dataRecentPosts,
@@ -312,4 +339,5 @@ export default {
   dataImgAbout,
   dataCardAbout,
   dataCardDevelopers,
+  dataLinhNav,
 };

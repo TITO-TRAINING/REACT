@@ -21,7 +21,7 @@ export default function ContentAbout() {
         <div className="row">
           <div className="about-page-button__restaurant d-flex justify-content-center col-md-6 ">
             <button type="button">
-              <a href="/BlogPage">
+              <a href="/blog">
                 <BiRestaurant /> Restaurants
               </a>
             </button>
