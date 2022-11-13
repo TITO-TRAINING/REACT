@@ -252,6 +252,80 @@ const dataSocialShare = [
   },
 ];
 
+const dataCardAbout = [
+  {
+    item: 'Help Center',
+    link: '/',
+  },
+  {
+    item: 'Video Tutorials',
+    link: '/',
+  },
+  {
+    item: 'Help Center',
+    link: '/',
+  },
+];
+
+const dataCardDevelopers = [
+  {
+    item: 'Md. Majharul Islam',
+    link: '/',
+  },
+  {
+    item: 'Tanjila Islam',
+    link: '/',
+  },
+  {
+    item: 'Mlưila',
+    link: '/',
+  },
+];
+
+const dataLinhNav = [
+  {
+    link: '/',
+    page: 'Home',
+  },
+  {
+    link: '/blog',
+    page: 'Restaurants',
+  },
+  {
+    link: '/detail-blog',
+    page: 'Newsfeed',
+  },
+  {
+    link: '/contact',
+    page: 'Contact',
+  },
+  {
+    link: '/about',
+    page: 'About',
+  },
+  {
+    link: '/profile',
+    page: 'Profile',
+  },
+];
+
+const dataFormInputProfile = [
+  {
+    placeholder: 'Full Name',
+  },
+  {
+    placeholder: 'UserName',
+  },
+  {
+    type: 'email',
+    placeholder: 'email',
+  },
+  {
+    type: 'password',
+    placeholder: 'password',
+  },
+];
+
 export default {
   dataSliders,
   dataRecentPosts,
@@ -265,4 +339,8 @@ export default {
   dataTagSocial,
   dataFormInput,
   dataSocialShare,
+  dataCardAbout,
+  dataCardDevelopers,
+  dataLinhNav,
+  dataFormInputProfile,
 };

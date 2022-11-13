@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage';
 import BlogPage from './pages/BlogPage';
 import Contact from './pages/Contact';
 import DetailBlogPage from './pages/Detailblogpage';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/detail-blog" element={<DetailBlogPage />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
