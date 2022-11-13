@@ -21,7 +21,8 @@ import logoTwitter from '../assets/images/twitterLogo.png';
 // data Comment
 import imgAvt from '../assets/images/avt.png';
 
-// data social share
+// data about img
+import imgAbout from '../assets/images/pngfind.png';
 
 const dataSliders = [
   {
@@ -233,6 +234,7 @@ const dataFormInput = [
     placeholder: 'Your Mail',
   },
 ];
+
 const dataSocialShare = [
   {
     title: '',
@@ -252,6 +254,75 @@ const dataSocialShare = [
   },
 ];
 
+const dataImgAbout = [
+  {
+    class: 'about-page-img__food2 d-flex flex-row-reverse',
+    img: imgAbout,
+    alt: 'food',
+  },
+  {
+    img: imgAbout,
+    alt: 'food',
+  },
+];
+
+const dataCardAbout = [
+  {
+    item: 'Help Center',
+    link: '/',
+  },
+  {
+    item: 'Video Tutorials',
+    link: '/',
+  },
+  {
+    item: 'Help Center',
+    link: '/',
+  },
+];
+
+const dataCardDevelopers = [
+  {
+    item: 'Md. Majharul Islam',
+    link: '/',
+  },
+  {
+    item: 'Tanjila Islam',
+    link: '/',
+  },
+  {
+    item: 'Mlưila',
+    link: '/',
+  },
+];
+
+const dataLinhNav = [
+  {
+    link: '/',
+    page: 'Home',
+  },
+  {
+    link: '/blog',
+    page: 'Restaurants',
+  },
+  {
+    link: '/detail-blog',
+    page: 'Newsfeed',
+  },
+  {
+    link: '/contact',
+    page: 'Contact',
+  },
+  {
+    link: '/about',
+    page: 'About',
+  },
+  {
+    link: '/logout',
+    page: 'Logout',
+  },
+];
+
 export default {
   dataSliders,
   dataRecentPosts,
@@ -265,4 +336,8 @@ export default {
   dataTagSocial,
   dataFormInput,
   dataSocialShare,
+  dataImgAbout,
+  dataCardAbout,
+  dataCardDevelopers,
+  dataLinhNav,
 };
