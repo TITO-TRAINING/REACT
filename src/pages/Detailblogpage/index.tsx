@@ -45,7 +45,7 @@ function DetailBlogPage() {
                       <DetailComment
                         img={listComment.imgAvtComment}
                         info={listComment.info}
-                        day={listComment.day}
+                        date={listComment.date}
                         comment={listComment.comment}
                       />
                     ))}
