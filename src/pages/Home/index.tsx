@@ -1,20 +1,25 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
+// slick
 import Slider from 'react-slick';
-import ImgUpdate from '../../assets/images/update.png';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+// component
 import Pinnedreviewcard from '../../components/PinnedReviewCard';
 import Recentpostcard from '../../components/RecentPostCard';
 import Slide from '../../components/Slide';
 import Tittlesearch from '../../components/Titlesearch';
+// layout
 import Header from '../../layouts/Header';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Footer from '../../layouts/Footer';
+// data mock
 import dataMock from '../../dataMock';
+// img
 import Title from '../../assets/images/pushPin.png';
-import RecentPost from '../../components/RecentPost';
+import ImgUpdate from '../../assets/images/update.png';
+import ReccentPost from '../../components/ReccentPost';
 
-function Homepage() {
+function Home() {
   const settings = {
     infinite: true,
     speed: 500,
@@ -44,7 +49,7 @@ function Homepage() {
       <main className="container pt-5 ">
         <Tittlesearch />
         <Slide />
-        <RecentPost text="Recent post" imageCard={ImgUpdate} />
+        <ReccentPost text="Recent post" imageCard={ImgUpdate} />
         <section className="recent">
           <div className="recent-post-card">
             <Slider {...settings}>
@@ -55,7 +60,7 @@ function Homepage() {
           </div>
         </section>
         <section className="section-card mb-5">
-          <RecentPost text="Pinned Review" imageCard={Title} />
+          <ReccentPost text="Pinned Review" imageCard={Title} />
           <div className="pinned-review mt-5">
             <Slider {...settings}>
               {dataMock.dataPinnedReview.map((item) => (
@@ -74,4 +79,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Home;
