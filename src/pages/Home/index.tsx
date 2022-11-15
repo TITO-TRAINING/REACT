@@ -1,20 +1,25 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
+// slick
 import Slider from 'react-slick';
-import ImgUpdate from '../../assets/images/update.png';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+// component
 import Pinnedreviewcard from '../../components/PinnedReviewCard';
 import Recentpostcard from '../../components/RecentPostCard';
 import Slide from '../../components/Slide';
 import Tittlesearch from '../../components/Titlesearch';
-import Header from '../../layouts/Header';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Footer from '../../layouts/Footer';
-import dataMock from '../../dataMock';
-import Title from '../../assets/images/pushPin.png';
 import RecentPost from '../../components/RecentPost';
+// layout
+import Header from '../../layouts/Header';
+import Footer from '../../layouts/Footer';
+// data mock
+import dataMock from '../../dataMock';
+// img
+import Title from '../../assets/images/pushPin.png';
+import ImgUpdate from '../../assets/images/update.png';
 
-function Homepage() {
+function Home() {
   const settings = {
     infinite: true,
     speed: 500,
@@ -74,4 +79,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Home;
