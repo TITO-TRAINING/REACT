@@ -15,7 +15,7 @@ import Line from '../../components/Line';
 import Detailblog from '../../components/DetailBlog';
 import MainLayout from '../../components/MainLayout';
 
-function DetailBlogPage() {
+function DetailBlog() {
   const classLine = 'line-detail-blog line';
   return (
     <MainLayout
@@ -45,7 +45,7 @@ function DetailBlogPage() {
                       <DetailComment
                         img={listComment.imgAvtComment}
                         info={listComment.info}
-                        day={listComment.day}
+                        date={listComment.date}
                         comment={listComment.comment}
                       />
                     ))}
@@ -61,4 +61,4 @@ function DetailBlogPage() {
   );
 }
 
-export default DetailBlogPage;
+export default DetailBlog;
