@@ -303,7 +303,7 @@ const dataLinhNav = [
   },
   {
     link: '/blog',
-    page: 'Restaurants',
+    page: 'Blog',
   },
   {
     link: '/detail-blog',
@@ -318,11 +318,57 @@ const dataLinhNav = [
     page: 'About',
   },
   {
-    link: '/logout',
-    page: 'Logout',
+    link: '/profile',
+    page: 'Profile',
+  },
+  {
+    link: '/account',
+    page: 'Account',
   },
 ];
 
+const dataFormInputProfile = [
+  {
+    placeholder: 'Full Name',
+  },
+  {
+    placeholder: 'UserName',
+  },
+  {
+    type: 'email',
+    placeholder: 'email',
+  },
+  {
+    type: 'password',
+    placeholder: 'password',
+  },
+];
+
+const dataFormRegister = [
+  {
+    classForm: 'col-md-12',
+    classInput: 'form-control form-control-lg mb-4',
+    placeholder: 'Your Name',
+  },
+  {
+    classForm: 'col-md-12',
+    type: 'gmail',
+    classInput: 'form-control form-control-lg mb-4',
+    placeholder: 'Your Gmail',
+  },
+  {
+    classForm: 'col-md-12',
+    type: 'password',
+    classInput: 'form-control form-control-lg mb-4',
+    placeholder: 'Your Password',
+  },
+  {
+    classForm: 'col-md-12',
+    type: 'password',
+    classInput: 'form-control form-control-lg mb-4',
+    placeholder: 'Confrim Password',
+  },
+];
 export default {
   dataSliders,
   dataRecentPosts,
@@ -340,4 +386,6 @@ export default {
   dataCardAbout,
   dataCardDevelopers,
   dataLinhNav,
+  dataFormInputProfile,
+  dataFormRegister,
 };

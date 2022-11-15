@@ -12,6 +12,37 @@
       color: $icon-color;
     }
   }
+  &-Disconnect {
+    border: none;
+    padding: 16px;
+    background-color: $background-color;
+    color: $bg-color-btn-third;
+    &:hover {
+      color: $icon-color;
+    }
+  }
+  &-save {
+    background-color: $bg-color-btn-third;
+    color: $background-color;
+    border: none;
+    padding: 16px;
+  }
+  &-Delete {
+    background-color: $background-color-btn;
+    border: none;
+    padding: 16px;
+    &:hover {
+      color: $icon-color;
+    }
+  }
+  &-Login {
+    background-color: $bg-button-color;
+    border-radius: 20px;
+  }
+  &-Register {
+    background-color: $background-color-btn;
+    border-radius: 20px;
+  }
   display: block;
   width: 100%;
   font-size: 16px;
