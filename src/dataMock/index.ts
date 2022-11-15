@@ -357,4 +357,5 @@ export default {
   dataCardDevelopers,
   dataLinhNav,
   dataFormInputProfile,
+  dataImgAbout,
 };
