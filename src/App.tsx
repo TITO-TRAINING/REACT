@@ -5,9 +5,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import BlogPage from './pages/BlogPage';
 import Contact from './pages/Contact';
-import DetailBlogPage from './pages/Detailblogpage';
 import About from './pages/About';
 import Account from './pages/Account';
+import DetailBlogPage from './pages/DetailBlogPage';
 
 function App() {
   return (
