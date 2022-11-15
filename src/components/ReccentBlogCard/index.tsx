@@ -29,7 +29,7 @@ function ReccentBlogCard({
         <div className="d-flex justify-content-center">
           <Button
             classButton="btn-ChangePhoto btn-success btn-block"
-            button="Read more"
+            nameButton="Read more"
           />
         </div>
       </div>

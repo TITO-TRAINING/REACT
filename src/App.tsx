@@ -5,8 +5,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import BlogPage from './pages/BlogPage';
 import Contact from './pages/Contact';
-import DetailBlogPage from './pages/Detailblogpage';
+import DetailBlogPage from './pages/Detailblogpage'
 import Profile from './pages/Profile';
+import About from './pages/About';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/detail-blog" element={<DetailBlogPage />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

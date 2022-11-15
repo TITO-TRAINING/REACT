@@ -1,19 +1,21 @@
 import React from 'react';
 
 interface Props {
-  classTitle: string;
+  classList?: string;
+  classTitle?: string;
   title?: string;
   item: string;
   linkMainFooter: string;
 }
 export default function LisCard({
+  classList,
   classTitle,
   title,
   item,
   linkMainFooter,
 }: Props) {
   return (
-    <div className="footer-main__list">
+    <div className={classList}>
       <div className={classTitle}>
         <h6 className="title--third text-uppercase fw-bold footer-main__title">
           {title}
@@ -31,4 +33,6 @@ export default function LisCard({
 }
 LisCard.defaultProps = {
   title: '',
+  classList: 'footer-main__list',
+  classTitle: '',
 };

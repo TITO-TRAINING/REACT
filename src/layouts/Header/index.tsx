@@ -1,13 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// component
 import { FaBars } from 'react-icons/fa';
+import Navbar from '../../components/Navbar';
+// data mock
+import dataMock from '../../dataMock';
+// icon
+// img
 import Logo from '../../assets/images/logo.png';
+
+// data mock
 
 function Header() {
   return (
     <div className="headerr">
       <header className="header navbar navbar-expand-lg row justify-content-between container-fluid">
-        <div className="header-logo navbar-brand d-flex align-items-center gap-4 col-md-5 col-lg-4">
+        <div className="header-logo navbar-brand d-flex align-items-center gap-4 col-md-4">
           <figure className="header-logo-image">
             <img src={Logo} alt="logo food review blog" />
           </figure>
@@ -16,23 +23,11 @@ function Header() {
             <FaBars />
           </div>
         </div>
-        <nav className="header-nav col-md-7">
+        <nav className="header-nav col-md-8">
           <ul className="header-nav-list navbar-nav d-flex justify-content-between">
-            <li className="nav-item">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/blog">Restaurants</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/detail-blog">Newsfeed</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about">Logout</Link>
-            </li>
+            {dataMock.dataLinhNav.map((listlinkNav) => (
+              <Navbar link={listlinkNav.link} page={listlinkNav.page} />
+            ))}
           </ul>
         </nav>
       </header>
