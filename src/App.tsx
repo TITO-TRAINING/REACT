@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // pages
-import Homepage from './pages/Homepage';
-import BlogPage from './pages/BlogPage';
+import Homepage from './pages/HomePage';
 import Contact from './pages/Contact';
-import DetailBlogPage from './pages/Detailblogpage';
+import DetailBlogPage from './pages/DetailBlogPage';
 import About from './pages/About';
+import BlogPage from './pages/BlogPage';
 
 function App() {
   return (

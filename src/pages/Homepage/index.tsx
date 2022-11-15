@@ -12,7 +12,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Footer from '../../layouts/Footer';
 import dataMock from '../../dataMock';
 import Title from '../../assets/images/pushPin.png';
-import RecentPost from '../../components/RecentPost';
+import RecentPost from '../../components/Recentpost';
 
 function Homepage() {
   const settings = {
