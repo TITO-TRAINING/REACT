@@ -5,20 +5,40 @@
     border: none;
     cursor: pointer;
     padding: 16px;
-    color: var(--color);
     border-radius: 20px;
     background-color: $background-color-btn;
     &:hover {
       color: $icon-color;
     }
   }
+  &-Disconnect {
+    border: none;
+    padding: 16px;
+    background-color: $background-color;
+    color: $bg-color-btn-third;
+    &:hover {
+      color: $icon-color;
+    }
+  }
+  &-save {
+    background-color: $bg-color-btn-third;
+    color: $background-color;
+    border: none;
+    padding: 16px;
+  }
+  &-Delete {
+    background-color: $background-color-btn;
+    border: none;
+    padding: 16px;
+    &:hover {
+      color: $icon-color;
+    }
+  }
+
   display: block;
   width: 100%;
   font-size: 16px;
   font-family: $bold-font;
-  background-color: var(--backgroundColor);
-  color: var(--color);
-  border-radius: var(--border-radius);
   text-transform: uppercase;
   border: none;
   cursor: pointer;

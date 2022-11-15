@@ -24,7 +24,7 @@ export default function Profile() {
               <div className="col-md-6 d-flex justify-content-end">
                 <div className="col-md-2 d-flex align-items-center">
                   <Button
-                    classButton="btn-ChangePhoto px-3 btn btn-success btn-block"
+                    classButton="btn-save px-3 btn btn-success btn-block"
                     nameButton="Save"
                   />
                 </div>
@@ -37,13 +37,13 @@ export default function Profile() {
               </figure>
               <div className="col-md-2 mb-3 d-flex align-items-center">
                 <Button
-                  classButton="btn-ChangePhoto  btn-success text-truncate btn-block"
+                  classButton="btn-save px-3 btn btn-success text-truncate btn-block"
                   nameButton="Change photo"
                 />
               </div>
-              <div className="col-md-8 mb-3 d-flex align-items-center">
+              <div className="col-md-2 mb-3 d-flex align-items-center">
                 <Button
-                  classButton="btn-ChangePhoto btn-success btn-block"
+                  classButton="btn btn-Delete btn-success btn-block"
                   nameButton="Delete"
                 />
               </div>
@@ -57,7 +57,7 @@ export default function Profile() {
               ))}
             </div>
             <div className=" d-flex col-md-12 justify-content-end">
-              <Button classButton="btn-ChangePhoto" nameButton="Changes" />
+              <Button classButton="btn-save px-3" nameButton="Changes" />
             </div>
             <div className="block my-5">
               <h5 className="title fw-bold mb-5">Connected Account</h5>
@@ -69,7 +69,7 @@ export default function Profile() {
                   </span>
                   <div className=" d-flex col-md-6 justify-content-end">
                     <Button
-                      classButton="btn-ChangePhoto"
+                      classButton="btn-Disconnect"
                       nameButton="Disconnect"
                     />
                   </div>
@@ -86,7 +86,7 @@ export default function Profile() {
                 </span>
                 <div className=" d-flex col-md-6 justify-content-end">
                   <Button
-                    classButton="btn-ChangePhoto"
+                    classButton="btn-Disconnect"
                     nameButton="Disconnect"
                   />
                 </div>
@@ -104,7 +104,7 @@ export default function Profile() {
               </p>
               <div className="button-login d-flex justify-content-end col-md-6">
                 <Button
-                  classButton="btn-ChangePhoto btn-success btn-block"
+                  classButton="btn-Disconnect btn-success btn-block"
                   nameButton="Unsubscribe"
                 />
               </div>
@@ -112,11 +112,11 @@ export default function Profile() {
             <Line line="line" />
             <div className="row mb-5">
               <div className="button-login d-flex col-md-6">
-                <Button classButton="btn-ChangePhoto" nameButton="Sign out" />
+                <Button classButton="btn-Disconnect" nameButton="Sign out" />
               </div>
               <div className=" d-flex col-md-6 justify-content-end">
                 <Button
-                  classButton="btn-ChangePhoto"
+                  classButton="btn-Disconnect"
                   nameButton="Delete Account"
                 />
               </div>
