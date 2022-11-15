@@ -3,10 +3,10 @@ import React from 'react';
 interface Props {
   img: string;
   info: string;
-  day: string;
+  date: string;
   comment: string;
 }
-function DetailComment({ img, info, day, comment }: Props) {
+function DetailComment({ img, info, date, comment }: Props) {
   return (
     <div className="blog-details-comment mt-5">
       <figure className="blog-details-comment thumb">
@@ -19,7 +19,7 @@ function DetailComment({ img, info, day, comment }: Props) {
       <div className="blog-details-comment content row">
         <h4 className="content__title d-flex">{info}</h4>
         <ul className="content__meta">
-          <li>{day}</li>
+          <li>{date}</li>
         </ul>
         <p>{comment}</p>
       </div>
