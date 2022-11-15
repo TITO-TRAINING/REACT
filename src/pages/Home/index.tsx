@@ -9,7 +9,6 @@ import Pinnedreviewcard from '../../components/PinnedReviewCard';
 import Recentpostcard from '../../components/RecentPostCard';
 import Slide from '../../components/Slide';
 import Tittlesearch from '../../components/Titlesearch';
-import RecentPost from '../../components/RecentPost';
 // layout
 import Header from '../../layouts/Header';
 import Footer from '../../layouts/Footer';
@@ -18,6 +17,7 @@ import dataMock from '../../dataMock';
 // img
 import Title from '../../assets/images/pushPin.png';
 import ImgUpdate from '../../assets/images/update.png';
+import ReccentPost from '../../components/ReccentPost';
 
 function Home() {
   const settings = {
@@ -49,7 +49,7 @@ function Home() {
       <main className="container pt-5 ">
         <Tittlesearch />
         <Slide />
-        <RecentPost text="Recent post" imageCard={ImgUpdate} />
+        <ReccentPost text="Recent post" imageCard={ImgUpdate} />
         <section className="recent">
           <div className="recent-post-card">
             <Slider {...settings}>
@@ -60,7 +60,7 @@ function Home() {
           </div>
         </section>
         <section className="section-card mb-5">
-          <RecentPost text="Pinned Review" imageCard={Title} />
+          <ReccentPost text="Pinned Review" imageCard={Title} />
           <div className="pinned-review mt-5">
             <Slider {...settings}>
               {dataMock.dataPinnedReview.map((item) => (
