@@ -73,10 +73,7 @@ export default function Profile() {
                       nameButton="Disconnect"
                     />
                   </div>
-                  <FormInput
-                    classForm="form-input"
-                    placeholder="Nguyễn Mai Lan"
-                  />
+                  <FormInput classForm="form-input" placeholder="Họ và tên" />
                 </div>
               </div>
               <div className="list-item row ">
@@ -93,7 +90,7 @@ export default function Profile() {
                 <FormInput
                   type="email"
                   classForm="form-input"
-                  placeholder="mailan@gmail.com"
+                  placeholder="example@gmail.com"
                 />
               </div>
             </div>
