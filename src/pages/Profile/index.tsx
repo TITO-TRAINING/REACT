@@ -10,8 +10,13 @@ import MainLayout from '../../components/MainLayout';
 import img from '../../assets/images/avt.png';
 // data mock
 import dataMock from '../../dataMock';
+import SubmitForm from '../../components/SubmitForm';
 
 export default function Profile() {
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    // console.log('You have submitted the form.');
+  };
   return (
     <MainLayout
       chidren={
@@ -48,17 +53,20 @@ export default function Profile() {
                 />
               </div>
             </div>
-            <div className="row mt-5">
-              {dataMock.dataFormInputProfile.map((listForm) => (
-                <FormInput
-                  type={listForm.type}
-                  placeholder={listForm.placeholder}
-                />
-              ))}
-            </div>
-            <div className=" d-flex col-md-12 justify-content-end">
-              <Button classButton="btn-save px-3" nameButton="Changes" />
-            </div>
+            <form action="/" onSubmit={handleSubmit}>
+              <div className="row mt-5">
+                {dataMock.dataFormInputProfile.map((listForm) => (
+                  <FormInput
+                    type={listForm.type}
+                    placeholder={listForm.placeholder}
+                    nameInput={listForm.name}
+                  />
+                ))}
+              </div>
+              <div className=" d-flex col-md-12 justify-content-end">
+                <SubmitForm classButton="btn-save px-3" nameButton="Changes" />
+              </div>
+            </form>
             <div className="block my-5">
               <h5 className="title fw-bold mb-5">Connected Account</h5>
               <div className="cube mb-4">

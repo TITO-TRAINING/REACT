@@ -326,17 +326,21 @@ const dataLinhNav = [
 const dataFormInputProfile = [
   {
     placeholder: 'Full Name',
+    name: 'fullName',
   },
   {
     placeholder: 'UserName',
+    name: 'userName',
   },
   {
     type: 'email',
     placeholder: 'email',
+    name: 'email',
   },
   {
     type: 'password',
     placeholder: 'password',
+    name: 'password',
   },
 ];
 
