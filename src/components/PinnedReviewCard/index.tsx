@@ -4,7 +4,7 @@ interface Props {
   cardReviewersImage: string;
   info: string;
   comment: string;
-  rating: string;
+  rating: number;
 }
 function Pinnedreviewcard({
   cardReviewersImage,
