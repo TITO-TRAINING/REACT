@@ -324,23 +324,26 @@ const dataLinhNav = [
   {
     link: '/account',
     page: 'Account',
-  },
 ];
 
 const dataFormInputProfile = [
   {
     placeholder: 'Full Name',
+    name: 'fullName',
   },
   {
     placeholder: 'UserName',
+    name: 'userName',
   },
   {
     type: 'email',
     placeholder: 'email',
+    name: 'email',
   },
   {
     type: 'password',
     placeholder: 'password',
+    name: 'password',
   },
 ];
 
@@ -382,10 +385,10 @@ export default {
   dataTagSocial,
   dataFormInput,
   dataSocialShare,
-  dataImgAbout,
   dataCardAbout,
   dataCardDevelopers,
   dataLinhNav,
   dataFormInputProfile,
   dataFormRegister,
+  dataImgAbout,
 };

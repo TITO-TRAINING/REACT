@@ -2,18 +2,14 @@ import React from 'react';
 
 interface Props {
   classButton: string;
-  classIcon?: string;
   nameButton: string;
 }
-function Button({ classButton, classIcon, nameButton }: Props) {
+function Button({ classButton, nameButton }: Props) {
   return (
     <button type="button" className={classButton}>
-      <i className={classIcon} /> {nameButton}
+      {nameButton}
     </button>
   );
 }
 
 export default Button;
-Button.defaultProps = {
-  classIcon: '',
-};
