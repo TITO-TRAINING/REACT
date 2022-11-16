@@ -1,10 +1,14 @@
 import React from 'react';
 import logo from '../../assets/images/onlineRegistration.png';
 import dataMock from '../../dataMock';
-import Button from '../Button';
 import FormInput from '../FormInput';
+import SubmitForm from '../SubmitForm';
 
 export default function Register() {
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    // console.log('You have submitted the form.');
+  };
   return (
     <div className="login-card login loginform mb-5 p-5" id="register">
       <div className="login-card-body body">
@@ -13,7 +17,7 @@ export default function Register() {
             <img src={logo} alt="" />
           </figure>
         </div>
-        <form className="body-form" action="">
+        <form className="body-form" action="/" onSubmit={handleSubmit}>
           {dataMock.dataFormRegister.map((listFormRegister) => (
             <FormInput
               classForm={listFormRegister.classForm}
@@ -24,13 +28,13 @@ export default function Register() {
           ))}
           <div className="body-btn row ">
             <div className="button-login d-flex justify-content-center col-md-6">
-              <Button
+              <SubmitForm
                 classButton="btnlogin btn-Login btn btn-success btn-block btn-sm text-body"
                 nameButton="Login"
               />
             </div>
             <div className="button-login d-flex justify-content-center col-md-6">
-              <Button
+              <SubmitForm
                 classButton="btnlogin btn-Register btn btn-success btn-block btn-sm text-body"
                 nameButton="Register"
               />

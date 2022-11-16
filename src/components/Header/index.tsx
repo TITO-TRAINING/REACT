@@ -3,7 +3,7 @@ import imgHeader from '../../assets/images/logo.png';
 
 function Headerlogo() {
   return (
-    <div className="headerr header-logo navbar-brand d-flex justify-content-center align-items-center gap-4 mt-5">
+    <div className="main-header header-logo navbar-brand d-flex justify-content-center align-items-center gap-4 mt-5">
       <figure className="header-logo-image">
         <img src={imgHeader} alt="logo food review blog" />
       </figure>
