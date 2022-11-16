@@ -324,6 +324,7 @@ const dataLinhNav = [
   {
     link: '/account',
     page: 'Account',
+  },
 ];
 
 const dataFormInputProfile = [
