@@ -1,6 +1,7 @@
 import React from 'react';
 // component
 import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
 // data mock
 import dataMock from '../../dataMock';
@@ -18,7 +19,9 @@ function Header() {
           <figure className="header-logo-image">
             <img src={Logo} alt="logo food review blog" />
           </figure>
-          <h1 className="header-logo-content">Food Review Blog</h1>
+          <Link to="/" className="logo">
+            <h1 className="header-logo-content">Food Review Blog</h1>
+          </Link>
           <div className="menu__actions" id="toggle">
             <FaBars />
           </div>

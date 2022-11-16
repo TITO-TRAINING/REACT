@@ -9,6 +9,9 @@
     background-color: $background-color;
     margin-left: auto;
     &-logo {
+      .logo {
+        text-decoration: none;
+      }
       &-content {
         font-family: $bold-font;
         font-size: 25px;
