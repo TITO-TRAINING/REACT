@@ -10,7 +10,7 @@
 }
 
 @mixin desktop {
-  @media screen and (max-width: $lager) {
+  @media screen and (max-width: $extra-lager) {
     @content;
   }
 }

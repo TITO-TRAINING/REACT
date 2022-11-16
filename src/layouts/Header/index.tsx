@@ -14,7 +14,7 @@ function Header() {
   return (
     <div className="main-header">
       <header className="header navbar navbar-expand-lg row justify-content-between container-fluid">
-        <div className="header-logo navbar-brand d-flex align-items-center gap-4 col-md-4">
+        <div className="header-logo navbar-brand d-flex align-items-center gap-4 col-xl-4 m-auto">
           <figure className="header-logo-image">
             <img src={Logo} alt="logo food review blog" />
           </figure>
@@ -23,7 +23,7 @@ function Header() {
             <FaBars />
           </div>
         </div>
-        <nav className="header-nav col-md-8">
+        <nav className="header-nav col-xl-8">
           <ul className="header-nav-list navbar-nav d-flex justify-content-between">
             {dataMock.dataLinhNav.map((listlinkNav) => (
               <Navbar link={listlinkNav.link} page={listlinkNav.page} />
