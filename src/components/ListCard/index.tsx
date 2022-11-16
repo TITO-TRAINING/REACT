@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface Props {
   classList?: string;
@@ -23,9 +24,9 @@ export default function LisCard({
       </div>
       <ul>
         <li>
-          <a href={linkMainFooter} className="link-main footer-main__link">
+          <Link to={linkMainFooter} className="link-main footer-main__link">
             {item}
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

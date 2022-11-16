@@ -1,4 +1,4 @@
-@use "../abstracts/" as *;
+@use '../abstracts/' as *;
 
 .comment-post-area {
   &__input-item {
@@ -19,8 +19,9 @@
     border-radius: 15px;
     background-color: $hover-color;
     border: none;
+    color: $background-color;
     &:hover {
-        background-color: $text-color;
+      background-color: $text-color;
     }
   }
 }
