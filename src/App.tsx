@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contact from './pages/Contact';
 import Profile from './pages/Profile';
 import About from './pages/About';
+import Account from './pages/Account';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import DetailBlog from './pages/DetailBlog';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/detail-blog" element={<DetailBlog />} />
         <Route path="/about" element={<About />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </BrowserRouter>
   );

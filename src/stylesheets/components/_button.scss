@@ -34,7 +34,14 @@
       color: $icon-color;
     }
   }
-
+  &-Login {
+    background-color: $bg-button-color;
+    border-radius: 20px;
+  }
+  &-Register {
+    background-color: $background-color-btn;
+    border-radius: 20px;
+  }
   display: block;
   width: 100%;
   font-size: 16px;

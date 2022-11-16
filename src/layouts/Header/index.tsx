@@ -12,7 +12,7 @@ import Logo from '../../assets/images/logo.png';
 
 function Header() {
   return (
-    <div className="headerr">
+    <div className="main-header">
       <header className="header navbar navbar-expand-lg row justify-content-between container-fluid">
         <div className="header-logo navbar-brand d-flex align-items-center gap-4 col-md-4">
           <figure className="header-logo-image">
