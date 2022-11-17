@@ -23,6 +23,7 @@ import imgAvt from '../assets/images/avt.png';
 
 // data about img
 import imgAbout from '../assets/images/pngfind.png';
+import Common from '../Constants/Common';
 
 const dataSliders = [
   {
@@ -101,17 +102,17 @@ const dataRecentBlogCard = [
 
 const dataLinkImgFooter = [
   {
-    link: '/',
+    link: Common.LINKFB,
     linkImg: logoFb,
     logo: 'logo facebook',
   },
   {
-    link: '/',
+    link: Common.LINKINS,
     linkImg: logoInstagram,
     logo: 'logo instagram',
   },
   {
-    link: '/',
+    link: Common.LINKINS,
     linkImg: logoTwitter,
     logo: 'logo twitter',
   },
@@ -119,23 +120,19 @@ const dataLinkImgFooter = [
 
 const dataListCompany = [
   {
-    classTitle: '',
     item: 'News',
     title: 'Company',
     linkMainFooter: '/detail-blog',
   },
   {
-    classTitle: '',
     item: 'Blog',
     linkMainFooter: '/blog',
   },
   {
-    classTitle: '',
     item: 'Testimonials',
     linkMainFooter: '/',
   },
   {
-    classTitle: '',
     item: 'About Us',
     linkMainFooter: '/about',
   },
@@ -143,23 +140,19 @@ const dataListCompany = [
 
 const dataListProducts = [
   {
-    classTitle: '',
     item: 'UI Kits',
     title: 'Products',
     linkMainFooter: '/',
   },
   {
-    classTitle: '',
     item: 'Icons',
     linkMainFooter: '/',
   },
   {
-    classTitle: '',
     item: 'Wordpress Themes',
     linkMainFooter: '/',
   },
   {
-    classTitle: '',
     item: 'Mock-Ups',
     linkMainFooter: '/',
   },
@@ -167,23 +160,19 @@ const dataListProducts = [
 
 const dataListContact = [
   {
-    classTitle: '',
     item: 'New York, NY 10012',
     title: 'Contact',
     linkMainFooter: '/',
   },
   {
-    classTitle: '',
     item: 'info@example.com',
     linkMainFooter: '/',
   },
   {
-    classTitle: '',
     item: '+ 01 234 567 88',
     linkMainFooter: '/',
   },
   {
-    classTitle: '',
     item: '+ 01 234 567 89',
     linkMainFooter: '/',
   },
@@ -271,8 +260,8 @@ const dataImgAbout = [
 
 const dataCardAbout = [
   {
-    item: 'Help Center',
-    link: '/',
+    item: 'Contact',
+    link: '/contact',
   },
   {
     item: 'Video Tutorials',

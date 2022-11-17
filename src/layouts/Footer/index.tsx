@@ -33,7 +33,6 @@ function Footer() {
             <div className="footer-locations__link col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               {dataMock.dataListCompany.map((ListTitle) => (
                 <LisCard
-                  classTitle={ListTitle.classTitle}
                   item={ListTitle.item}
                   title={ListTitle.title}
                   linkMainFooter={ListTitle.linkMainFooter}
@@ -43,7 +42,6 @@ function Footer() {
             <div className="footer-locations__link col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               {dataMock.dataListProducts.map((ListdataProducts) => (
                 <LisCard
-                  classTitle={ListdataProducts.classTitle}
                   item={ListdataProducts.item}
                   title={ListdataProducts.title}
                   linkMainFooter={ListdataProducts.linkMainFooter}
@@ -53,7 +51,6 @@ function Footer() {
             <div className="footer-locations__link col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               {dataMock.dataListContact.map((ListdataContact) => (
                 <LisCard
-                  classTitle={ListdataContact.classTitle}
                   item={ListdataContact.item}
                   title={ListdataContact.title}
                   linkMainFooter={ListdataContact.linkMainFooter}
