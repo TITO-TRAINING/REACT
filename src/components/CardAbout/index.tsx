@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface Props {
   item: string;
@@ -8,9 +9,9 @@ export default function ListCard({ item, link }: Props) {
   return (
     <ul>
       <li>
-        <a href={link} className="link-main footer-main__link">
+        <Link to={link} className="link-main footer-main__link">
           {item}
-        </a>
+        </Link>
       </li>
     </ul>
   );

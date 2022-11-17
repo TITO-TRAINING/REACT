@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // data mock
 import dataMock from '../../dataMock';
@@ -9,9 +10,9 @@ function SocialShare() {
       <div className="widget-social">
         <p>Share: </p>
         {dataMock.dataSocialShare.map((data) => (
-          <a title={data.title} href={data.href}>
+          <Link title={data.title} to={data.href}>
             <data.icon className={data.className} />
-          </a>
+          </Link>
         ))}
       </div>
     </div>
