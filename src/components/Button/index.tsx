@@ -3,10 +3,11 @@ import React from 'react';
 interface Props {
   classButton: string;
   nameButton: string;
+  handleOnclick: () => void;
 }
-function Button({ classButton, nameButton }: Props) {
+function Button({ classButton, nameButton, handleOnclick }: Props) {
   return (
-    <button type="button" className={classButton}>
+    <button type="button" className={classButton} onClick={handleOnclick}>
       {nameButton}
     </button>
   );
