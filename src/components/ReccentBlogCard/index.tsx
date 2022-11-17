@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../Button';
 
 interface Props {
@@ -27,10 +28,12 @@ function ReccentBlogCard({
           <small className="text-muted">{cardTime}</small>
         </p>
         <div className="d-flex justify-content-center">
-          <Button
-            classButton="btn-ChangePhoto btn-success btn-block"
-            nameButton="Read more"
-          />
+          <Link to="/detail-blog">
+            <Button
+              classButton="btn-ChangePhoto btn-success btn-block"
+              nameButton="Read more"
+            />
+          </Link>
         </div>
       </div>
     </div>
