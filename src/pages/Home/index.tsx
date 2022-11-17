@@ -68,6 +68,7 @@ function Home() {
                   cardReviewersImage={item.cardReviewersImage}
                   info={item.info}
                   comment={item.comment}
+                  rating={item.rating}
                 />
               ))}
             </Slider>

@@ -55,18 +55,21 @@ const dataPinnedReview = [
   {
     cardReviewersImage: imgPinnedReview,
     info: 'Mailan',
+    rating: 4.5,
     comment:
       'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
   },
   {
     cardReviewersImage: imgPinnedReview2,
     info: 'Mailan',
+    rating: 4,
     comment:
       'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
   },
   {
     cardReviewersImage: imgPinnedReview3,
     info: 'Mailan',
+    rating: 3,
     comment:
       'Thank you so much for delivering a quality piece. Will be using it with one of my outfits. Just not sure which one!!!!',
   },
@@ -119,12 +122,12 @@ const dataListCompany = [
     classTitle: '',
     item: 'News',
     title: 'Company',
-    linkMainFooter: '/',
+    linkMainFooter: '/detail-blog',
   },
   {
     classTitle: '',
     item: 'Blog',
-    linkMainFooter: '/',
+    linkMainFooter: '/blog',
   },
   {
     classTitle: '',
@@ -134,7 +137,7 @@ const dataListCompany = [
   {
     classTitle: '',
     item: 'About Us',
-    linkMainFooter: '/',
+    linkMainFooter: '/about',
   },
 ];
 
