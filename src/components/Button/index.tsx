@@ -3,7 +3,7 @@ import React from 'react';
 interface Props {
   classButton: string;
   nameButton: string;
-  handleOnclick: () => void;
+  handleOnclick?: () => void;
 }
 function Button({ classButton, nameButton, handleOnclick }: Props) {
   return (
@@ -14,3 +14,7 @@ function Button({ classButton, nameButton, handleOnclick }: Props) {
 }
 
 export default Button;
+
+Button.defaultProps = {
+  handleOnclick: {},
+};
