@@ -1,11 +1,15 @@
 import React from 'react';
 // component
 import FormInput from '../FormInput';
+import SubmitForm from '../SubmitForm';
+import Button from '../Button';
 // img
 import logo from '../../assets/images/handshake.png';
-import SubmitForm from '../SubmitForm';
 
-export default function Login() {
+interface Props {
+  handleBtnRegister: () => void;
+}
+export default function Login({ handleBtnRegister }: Props) {
   const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault();
     // console.log('You have submitted the form.');
@@ -54,9 +58,10 @@ export default function Login() {
               />
             </div>
             <div className="button-login d-flex justify-content-center col-md-6">
-              <SubmitForm
+              <Button
                 classButton="btnlogin btn-Register btn btn-success btn-block btn-sm text-body"
                 nameButton="Register"
+                handleOnclick={handleBtnRegister}
               />
             </div>
           </div>

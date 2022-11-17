@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // component
 import Header from '../../components/Header';
 import Login from '../../components/Login';
@@ -7,6 +7,9 @@ import Register from '../../components/Register';
 import imgUrl from '../../assets/images/brookeLark.png';
 
 export default function Account() {
+  const [isLayoutRegister, setIsLayoutRegister] = useState(false);
+  const handelBtnLoginInRegister = () => setIsLayoutRegister(!isLayoutRegister);
+  const handelBtnRegisterInLogin = () => setIsLayoutRegister(!isLayoutRegister);
   const divStyle = {
     backgroundImage: `url(${imgUrl})`,
   };
@@ -18,8 +21,11 @@ export default function Account() {
             <Header />
             <div className="form row d-flex justify-content-end align-items-center">
               <div className="col-12 col-md-9 col-lg-7 col-xl-6">
-                <Login />
-                <Register />
+                {!isLayoutRegister ? (
+                  <Login handleBtnRegister={handelBtnRegisterInLogin} />
+                ) : (
+                  <Register handleBtnLogin={handelBtnLoginInRegister} />
+                )}
               </div>
             </div>
           </div>
