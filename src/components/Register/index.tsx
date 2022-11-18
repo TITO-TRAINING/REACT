@@ -10,9 +10,6 @@ interface Props {
   handleBtnLogin: () => void;
 }
 export default function Register({ handleBtnLogin }: Props) {
-  const handleSubmit = () => {
-    // console.log('hello');
-  };
   return (
     <div className="login-card login loginform mb-5 p-5" id="register">
       <div className="login-card-body body">
@@ -21,7 +18,7 @@ export default function Register({ handleBtnLogin }: Props) {
             <img src={logo} alt="" />
           </figure>
         </div>
-        <form className="body-form" action="/" onSubmit={handleSubmit}>
+        <form className="body-form" action="">
           {dataMock.dataFormRegister.map((listFormRegister) => (
             <FormInput
               classForm={listFormRegister.classForm}

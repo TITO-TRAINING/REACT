@@ -16,5 +16,5 @@ function Button({ classButton, nameButton, handleOnclick }: Props) {
 export default Button;
 
 Button.defaultProps = {
-  handleOnclick: {},
+  handleOnclick: () => ({}),
 };

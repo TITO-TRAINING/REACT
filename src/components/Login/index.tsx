@@ -10,10 +10,6 @@ interface Props {
   handleBtnRegister: () => void;
 }
 export default function Login({ handleBtnRegister }: Props) {
-  const handleSubmit = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-    // console.log('You have submitted the form.');
-  };
   return (
     <div className="login-card login loginform mb-5 p-5" id="login">
       <div className="login-card-body body">
@@ -25,7 +21,7 @@ export default function Login({ handleBtnRegister }: Props) {
         <h5 className="body-text text-uppercase text-center mb-3">
           Welcome back
         </h5>
-        <form className="body-form" action="/" onSubmit={handleSubmit}>
+        <form className="body-form" action="">
           <FormInput
             classForm="col-md-12"
             classInput="form-control form-control-lg mb-4"
