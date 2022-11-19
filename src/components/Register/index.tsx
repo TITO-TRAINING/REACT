@@ -1,14 +1,15 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import logo from '../../assets/images/onlineRegistration.png';
 import dataMock from '../../dataMock';
+import Button from '../Button';
 import FormInput from '../FormInput';
 import SubmitForm from '../SubmitForm';
 
-export default function Register() {
-  const handleSubmit = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-    // console.log('You have submitted the form.');
-  };
+interface Props {
+  handleBtnLogin: () => void;
+}
+export default function Register({ handleBtnLogin }: Props) {
   return (
     <div className="login-card login loginform mb-5 p-5" id="register">
       <div className="login-card-body body">
@@ -17,7 +18,7 @@ export default function Register() {
             <img src={logo} alt="" />
           </figure>
         </div>
-        <form className="body-form" action="/" onSubmit={handleSubmit}>
+        <form className="body-form" action="">
           {dataMock.dataFormRegister.map((listFormRegister) => (
             <FormInput
               classForm={listFormRegister.classForm}
@@ -28,9 +29,10 @@ export default function Register() {
           ))}
           <div className="body-btn row ">
             <div className="button-login d-flex justify-content-center col-md-6">
-              <SubmitForm
+              <Button
                 classButton="btnlogin btn-Login btn btn-success btn-block btn-sm text-body"
                 nameButton="Login"
+                handleOnclick={handleBtnLogin}
               />
             </div>
             <div className="button-login d-flex justify-content-center col-md-6">

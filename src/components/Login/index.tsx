@@ -1,15 +1,15 @@
 import React from 'react';
 // component
 import FormInput from '../FormInput';
+import SubmitForm from '../SubmitForm';
+import Button from '../Button';
 // img
 import logo from '../../assets/images/handshake.png';
-import SubmitForm from '../SubmitForm';
 
-export default function Login() {
-  const handleSubmit = (event: { preventDefault: () => void }) => {
-    event.preventDefault();
-    // console.log('You have submitted the form.');
-  };
+interface Props {
+  handleBtnRegister: () => void;
+}
+export default function Login({ handleBtnRegister }: Props) {
   return (
     <div className="login-card login loginform mb-5 p-5" id="login">
       <div className="login-card-body body">
@@ -21,7 +21,7 @@ export default function Login() {
         <h5 className="body-text text-uppercase text-center mb-3">
           Welcome back
         </h5>
-        <form className="body-form" action="/" onSubmit={handleSubmit}>
+        <form className="body-form" action="">
           <FormInput
             classForm="col-md-12"
             classInput="form-control form-control-lg mb-4"
@@ -54,9 +54,10 @@ export default function Login() {
               />
             </div>
             <div className="button-login d-flex justify-content-center col-md-6">
-              <SubmitForm
+              <Button
                 classButton="btnlogin btn-Register btn btn-success btn-block btn-sm text-body"
                 nameButton="Register"
+                handleOnclick={handleBtnRegister}
               />
             </div>
           </div>

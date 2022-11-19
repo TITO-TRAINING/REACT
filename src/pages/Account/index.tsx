@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // component
 import Header from '../../components/Header';
 import Login from '../../components/Login';
@@ -7,6 +7,9 @@ import Register from '../../components/Register';
 import imgUrl from '../../assets/images/brookeLark.png';
 
 export default function Account() {
+  const [modalName, setModalName] = useState<string>('login');
+  const handelBtnLoginInRegister = () => setModalName('login');
+  const handelBtnRegisterInLogin = () => setModalName('register');
   const divStyle = {
     backgroundImage: `url(${imgUrl})`,
   };
@@ -18,8 +21,18 @@ export default function Account() {
             <Header />
             <div className="form row d-flex justify-content-end align-items-center">
               <div className="col-12 col-md-9 col-lg-7 col-xl-6">
-                <Login />
-                <Register />
+                {(() => {
+                  switch (modalName) {
+                    case 'register':
+                      return (
+                        <Register handleBtnLogin={handelBtnLoginInRegister} />
+                      );
+                    default:
+                      return (
+                        <Login handleBtnRegister={handelBtnRegisterInLogin} />
+                      );
+                  }
+                })()}
               </div>
             </div>
           </div>
