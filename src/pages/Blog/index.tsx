@@ -18,6 +18,7 @@ function Blog() {
           <div className="reccent-post-blog">
             {dataMock.dataRecentBlogCard.map((listRecentBlogCard) => (
               <ReccentBlogCard
+                key={listRecentBlogCard.cardTitle}
                 imageBlogCard={listRecentBlogCard.imageBlogCard}
                 cardTitle={listRecentBlogCard.cardTitle}
                 cardText={listRecentBlogCard.cardText}

@@ -54,7 +54,7 @@ function Home() {
           <div className="recent-post-card">
             <Slider {...settings}>
               {dataMock.dataRecentPosts.map((img) => (
-                <Recentpostcard image={img.img} />
+                <Recentpostcard key={img.img} image={img.img} />
               ))}
             </Slider>
           </div>
@@ -65,6 +65,7 @@ function Home() {
             <Slider {...settings}>
               {dataMock.dataPinnedReview.map((item) => (
                 <Pinnedreviewcard
+                  key={item.comment}
                   cardReviewersImage={item.cardReviewersImage}
                   info={item.info}
                   comment={item.comment}

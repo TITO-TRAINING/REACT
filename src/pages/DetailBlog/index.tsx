@@ -43,6 +43,7 @@ function DetailBlog() {
                     <h2 className="blog-desc-title mb-6 mt-8">Comment</h2>
                     {dataMock.dataComments.map((listComment) => (
                       <DetailComment
+                        key={listComment.comment}
                         img={listComment.imgAvtComment}
                         info={listComment.info}
                         date={listComment.date}

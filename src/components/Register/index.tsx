@@ -20,6 +20,7 @@ export default function Register() {
         <form className="body-form" action="/" onSubmit={handleSubmit}>
           {dataMock.dataFormRegister.map((listFormRegister) => (
             <FormInput
+              key={listFormRegister.classForm}
               classForm={listFormRegister.classForm}
               type={listFormRegister.type}
               classInput={listFormRegister.classInput}

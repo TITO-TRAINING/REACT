@@ -23,6 +23,7 @@ export default function About() {
                 <MainLayoutAbout
                   chidren={dataMock.dataCardAbout.map((listCardAbout) => (
                     <CardAbout
+                      key={listCardAbout.item}
                       link={listCardAbout.link}
                       item={listCardAbout.item}
                     />
@@ -30,14 +31,13 @@ export default function About() {
                   cardTitle="Help"
                 />
                 <MainLayoutAbout
-                  chidren={dataMock.dataCardDevelopers.map(
-                    (listdCardDevelopers) => (
-                      <CardAbout
-                        link={listdCardDevelopers.link}
-                        item={listdCardDevelopers.item}
-                      />
-                    ),
-                  )}
+                  chidren={dataMock.dataCardAbout.map((listdCardDevelopers) => (
+                    <CardAbout
+                      key={listdCardDevelopers.link}
+                      link={listdCardDevelopers.link}
+                      item={listdCardDevelopers.item}
+                    />
+                  ))}
                   cardTitle="Deverloper"
                 />
               </div>

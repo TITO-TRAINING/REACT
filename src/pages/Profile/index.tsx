@@ -57,6 +57,7 @@ export default function Profile() {
               <div className="row mt-5">
                 {dataMock.dataFormInputProfile.map((listForm) => (
                   <FormInput
+                    key={listForm.placeholder}
                     type={listForm.type}
                     placeholder={listForm.placeholder}
                     nameInput={listForm.name}
