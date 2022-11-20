@@ -46,6 +46,7 @@ export default function Contact() {
                     <div className="row">
                       {dataMock.dataFormInput.map((listFormInput) => (
                         <FormInput
+                          key={listFormInput.placeholder}
                           type={listFormInput.type}
                           placeholder={listFormInput.placeholder}
                         />

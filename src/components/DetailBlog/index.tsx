@@ -59,6 +59,7 @@ function Detailblog({
             <ul>
               {dataMock.dataTagSocial.map((listTagSocial) => (
                 <TagSocial
+                  key={listTagSocial.linkTagSocial}
                   linkTagSocial={listTagSocial.linkTagSocial}
                   tagSocial={listTagSocial.tagSocial}
                 />

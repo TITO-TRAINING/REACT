@@ -29,7 +29,11 @@ function Header() {
         <nav className="header-nav col-xl-8">
           <ul className="header-nav-list navbar-nav d-flex justify-content-between">
             {dataMock.dataLinhNav.map((listlinkNav) => (
-              <Navbar link={listlinkNav.link} page={listlinkNav.page} />
+              <Navbar
+                key={listlinkNav.link}
+                link={listlinkNav.link}
+                page={listlinkNav.page}
+              />
             ))}
           </ul>
         </nav>

@@ -21,6 +21,7 @@ export default function Register({ handleBtnLogin }: Props) {
         <form className="body-form" action="">
           {dataMock.dataFormRegister.map((listFormRegister) => (
             <FormInput
+              key={listFormRegister.classForm}
               classForm={listFormRegister.classForm}
               type={listFormRegister.type}
               classInput={listFormRegister.classInput}

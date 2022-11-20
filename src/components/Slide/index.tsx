@@ -20,7 +20,7 @@ function Slide() {
           {dataMock.dataSliders.map((slider) => (
             <div className="slider-item">
               <figure>
-                <img src={slider.img} alt="" />
+                <img key={slider.img} src={slider.img} alt="" />
               </figure>
             </div>
           ))}
